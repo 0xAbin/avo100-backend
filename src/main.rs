@@ -1,3 +1,7 @@
+
+mod utils;
+use crate::utils::get_assets::get_assets; 
+
 fn main() {
-    println!("AO-100 Crypto Asset");
+    get_assets();  
 }
