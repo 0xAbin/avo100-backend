@@ -1,14 +1,13 @@
 
 
-pub static totexc  : u8 = 5 ;
+pub static TOTEXC  : u8 = 5 ;
 
-pub static bybit : &str = "wss://stream.bybit.com/realtime_public";
-pub static coinbase : &str = "wss://ws-feed.exchange.coinbase.com";
-pub static okk : &str = "wss://ws.okx.com:8443/ws/v5/public";
-pub static bitget : &str = "wss://wsapi.bitget.com/mix/v1/stream";
+pub static BYBIT : &str = "wss://stream.bybit.com/realtime_public";
+pub static COINBASE : &str = "wss://ws-feed.exchange.coinbase.com";
+pub static OKK : &str = "wss://ws.okx.com:8443/ws/v5/public";
+pub static BITGET : &str = "wss://wsapi.bitget.com/mix/v1/stream";
 
 
-pub static token : &str = "BTC";
 
 pub fn binance_get(symbol: &str) -> String {
     let symbol_lower = symbol.to_lowercase();
