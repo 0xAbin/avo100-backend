@@ -11,17 +11,17 @@ fn main() {
             for (rank, symbol) in rank_symbol_pairs {
 
                 let binance_url = binance_get(&symbol);
-                let bybit_url = services::fetch_service::bybit_get(&symbol);
-                let coinbase_url = services::fetch_service::coinbase_get(&symbol);
-                let okx_url = services::fetch_service::okx_get(&symbol);
-                let bitget_url = services::fetch_service::bitget_get(&symbol);
+                let bybit_url = bybit_get(&symbol);
+                let coinbase_url = coinbase_get(&symbol);
+                let okx_url = okx_get(&symbol);
+                let bitget_url = bitget_get(&symbol);
 
                 println!("{}", rank);
-                println!("Binance WebSocket URL: {}", binance_url);
-                println!("Bybit WebSocket URL: {}", bybit_url);
-                println!("Coinbase WebSocket URL: {}", coinbase_url);
-                println!("OKX WebSocket URL: {}", okx_url);
-                println!("Bitget WebSocket URL: {}", bitget_url);
+                println!("{}", binance_url);
+                println!("{}", bybit_url);
+                println!("{}", coinbase_url);
+                println!("{}", okx_url);
+                println!("{}", bitget_url);
 
             }
         }
