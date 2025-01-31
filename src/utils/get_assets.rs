@@ -25,7 +25,7 @@ pub fn get_assets() -> Result<Vec<(usize, String)>, Box<dyn std::error::Error>> 
         .expect("Symbol field not found");
 
     let values = data["values"].as_array().expect("Expected values array");
-    let excluded_symbols: HashSet<&str> = ["USDT", "USDC"].iter().cloned().collect();
+    let excluded_symbols: HashSet<&str> = ["USDT", "USDC","FDUSD"].iter().cloned().collect();
 
     let mut rank_symbol_pairs: Vec<(i64, String)> = values
         .iter()
