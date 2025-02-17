@@ -38,3 +38,7 @@ pub fn bitget_get(symbol: &str) -> String {
 }
 
 
+
+
+
+
